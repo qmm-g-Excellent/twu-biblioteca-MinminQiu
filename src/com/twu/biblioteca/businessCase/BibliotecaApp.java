@@ -21,7 +21,12 @@ public class BibliotecaApp {
             } else if (operationNum == showBookListNo) {
                 ShowBooks showBooks = new ShowBooks();
                 showBooks.showBooks();
+            } else if (operationNum == checkoutBookNo) {
+                new CheckoutBook().CheckoutOneBook();
+            } else if (operationNum == returnBookNo) {
+
             }
+
             operationNum = scanner.nextInt();
         } while (operationNum != -1);
 
