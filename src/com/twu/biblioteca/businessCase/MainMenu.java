@@ -1,6 +1,6 @@
 package com.twu.biblioteca.businessCase;
 
-public class HomePage {
+public class MainMenu {
 
     public void homeMessage() {
         System.out.printf("******************************************\n\n");
