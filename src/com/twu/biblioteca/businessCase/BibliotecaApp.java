@@ -25,10 +25,12 @@ public class BibliotecaApp {
                 new CheckoutBook().CheckoutOneBook(new Scanner(System.in));
             } else if (operationNum == returnBookNo) {
                 new ReturnBook().returnBook(new Scanner(System.in));
+            } else {
+                System.out.println("Select a valid option!");
             }
 
             operationNum = scanner.nextInt();
-        } while (operationNum != -1);
+        } while (operationNum != 4);
 
     }
 }
