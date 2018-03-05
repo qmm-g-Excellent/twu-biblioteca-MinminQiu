@@ -2,7 +2,6 @@ package com.twu.biblioteca.businessCase;
 
 import com.twu.biblioteca.common.InitDatas;
 import org.junit.Test;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.Scanner;
@@ -12,10 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-
 public class CheckoutBookTest {
-
-
 
     @Test
     public void should_take_out_book_from_book_library() {

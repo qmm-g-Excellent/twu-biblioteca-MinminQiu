@@ -14,4 +14,5 @@ public class MainMenu {
 
         System.out.printf("\n请输入你的操作代号：");
     }
+
 }
