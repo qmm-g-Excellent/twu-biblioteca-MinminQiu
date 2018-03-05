@@ -1,4 +1,10 @@
-package com.twu.biblioteca.businessCase;
+package com.twu.biblioteca;
+
+import com.twu.biblioteca.book.businessCase.CheckoutBook;
+import com.twu.biblioteca.book.businessCase.MainMenu;
+import com.twu.biblioteca.book.businessCase.ReturnBook;
+import com.twu.biblioteca.book.businessCase.ShowBooks;
+import com.twu.biblioteca.movie.businessCase.ShowMovie;
 
 import java.util.Scanner;
 
@@ -23,24 +29,30 @@ public class BibliotecaApp {
                 case 0:
                     mainMenu.mainMenu();
                     break;
-                case 1:
+                case 2:
                     new ShowBooks().showBooks();
                     break;
-                case 2:
+                case 3:
                     new CheckoutBook().CheckoutOneBook(new Scanner(System.in));
                     break;
-                case 3:
+                case 4:
                     new ReturnBook().returnBook(new Scanner(System.in));
                     break;
+                case 6:
+                    new ShowMovie().showMovies();
+                    break;
+                case 7:
+                    new ReturnBook().returnBook(new Scanner(System.in));
+                    break;
+
                 default:
                     System.out.println("Select a valid option!");
                     System.out.print("\n请输入你的操作代号：");
                     break;
-
             }
 
             operationNum = scanner.nextInt();
-        } while (operationNum != 4);
+        } while (operationNum != 9);
     }
 
 }
