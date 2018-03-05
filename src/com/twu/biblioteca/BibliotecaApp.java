@@ -4,6 +4,7 @@ import com.twu.biblioteca.book.businessCase.CheckoutBook;
 import com.twu.biblioteca.book.businessCase.MainMenu;
 import com.twu.biblioteca.book.businessCase.ReturnBook;
 import com.twu.biblioteca.book.businessCase.ShowBooks;
+import com.twu.biblioteca.movie.businessCase.CheckoutMovie;
 import com.twu.biblioteca.movie.businessCase.ShowMovie;
 
 import java.util.Scanner;
@@ -42,7 +43,7 @@ public class BibliotecaApp {
                     new ShowMovie().showMovies();
                     break;
                 case 7:
-                    new ReturnBook().returnBook(new Scanner(System.in));
+                    new CheckoutMovie().checkoutMovie(new Scanner(System.in));
                     break;
 
                 default:
