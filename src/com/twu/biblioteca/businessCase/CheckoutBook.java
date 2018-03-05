@@ -9,16 +9,20 @@ import java.util.Scanner;
 
 public class CheckoutBook {
 
-    public void CheckoutOneBook() {
+    public void CheckoutOneBook(Scanner scanner) {
         List<Book> books = InitDatas.books;
-        Scanner scanner = new Scanner(System.in);
-
+        System.out.println("\n\n******************************************\n");
         System.out.print("请输入您要借出的书籍编号：");
-        int bookNo = scanner.nextInt();
+        int bookNo = Integer.parseInt(scanner.nextLine());
 
         for (Book book : new ArrayList<Book>(books)) {
             if (book.getBookNo() == bookNo) {
                 book.setIsAvailable(false);
+                System.out.println("\nThank you! Enjoy the book！");
+                break;
+            }
+            if (books.indexOf(book) == (books.size() - 1)) {
+                System.out.println("\nThat book is not available");
             }
         }
         System.out.print("\n请输入你的操作代号：");
