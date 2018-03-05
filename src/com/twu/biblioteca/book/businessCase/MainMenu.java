@@ -1,4 +1,4 @@
-package com.twu.biblioteca.businessCase;
+package com.twu.biblioteca.book.businessCase;
 
 public class MainMenu {
 

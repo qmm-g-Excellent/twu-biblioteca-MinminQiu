@@ -1,14 +1,14 @@
-package com.twu.biblioteca.businessCase;
+package com.twu.biblioteca.book.businessCase;
 
-import com.twu.biblioteca.common.InitDatas;
-import com.twu.biblioteca.entity.Book;
+import com.twu.biblioteca.common.InitBooks;
+import com.twu.biblioteca.book.entity.Book;
 import java.util.List;
 import java.util.Scanner;
 
 public class ReturnBook {
 
     public void returnBook( Scanner scanner) {
-        List<Book> books = InitDatas.books;
+        List<Book> books = InitBooks.books;
 
         System.out.println("******************************************\n\n");
         System.out.print("请输入您要还的书籍编号：");

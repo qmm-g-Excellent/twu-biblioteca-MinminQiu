@@ -1,7 +1,7 @@
-package com.twu.biblioteca.businessCase;
+package com.twu.biblioteca.book.businessCase;
 
-import com.twu.biblioteca.common.InitDatas;
-import com.twu.biblioteca.entity.Book;
+import com.twu.biblioteca.common.InitBooks;
+import com.twu.biblioteca.book.entity.Book;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class CheckoutBook {
 
     public void CheckoutOneBook(Scanner scanner) {
-        List<Book> books = InitDatas.books;
+        List<Book> books = InitBooks.books;
         System.out.println("\n\n******************************************\n");
         System.out.print("请输入您要借出的书籍编号：");
         int bookNo = Integer.parseInt(scanner.nextLine());

@@ -1,6 +1,7 @@
 package com.twu.biblioteca.businessCase;
 
-import com.twu.biblioteca.common.InitDatas;
+import com.twu.biblioteca.book.businessCase.CheckoutBook;
+import com.twu.biblioteca.common.InitBooks;
 import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -24,7 +25,7 @@ public class CheckoutBookTest {
 
         new CheckoutBook().CheckoutOneBook(mockScanner);
         assertThat(outContent.toString().contains("请输入您要借出的书籍编号"), is(true));
-        assertThat(InitDatas.books.get(0).getIsAvailable(), is(false));
+        assertThat(InitBooks.books.get(0).getIsAvailable(), is(false));
     }
 
 }

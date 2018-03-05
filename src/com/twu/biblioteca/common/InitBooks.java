@@ -1,12 +1,12 @@
 package com.twu.biblioteca.common;
 
-import com.twu.biblioteca.entity.Book;
+import com.twu.biblioteca.book.entity.Book;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class InitDatas {
+public class InitBooks {
 
     public static List<Book> books = new ArrayList<Book>(Arrays.asList(
             new Book(001, "代码大全", "马丁", "清华出版社", true),
