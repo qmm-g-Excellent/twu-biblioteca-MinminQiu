@@ -1,7 +1,7 @@
 package com.twu.biblioteca.businessCase;
 
 import com.twu.biblioteca.book.businessCase.ReturnBook;
-import com.twu.biblioteca.common.InitBooks;
+import com.twu.biblioteca.common.InitBook;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -27,7 +27,7 @@ public class ReturnBookTest {
         new ReturnBook().returnBook(mockScanner);
 
         assertThat(outContent.toString().contains("请输入您要还的书籍编号："), is(true));
-        assertThat(InitBooks.books.get(0).getIsAvailable(), is(true));
+        assertThat(InitBook.books.get(0).getIsAvailable(), is(true));
 
     }
 

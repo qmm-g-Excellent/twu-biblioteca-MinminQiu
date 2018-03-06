@@ -1,6 +1,6 @@
 package com.twu.biblioteca.businessCase;
 
-import com.twu.biblioteca.book.businessCase.MainMenu;
+import com.twu.biblioteca.main.MainMenu;
 import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
