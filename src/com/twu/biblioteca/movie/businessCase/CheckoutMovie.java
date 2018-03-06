@@ -1,6 +1,6 @@
 package com.twu.biblioteca.movie.businessCase;
 
-import com.twu.biblioteca.common.InitMovies;
+import com.twu.biblioteca.common.InitMovie;
 import com.twu.biblioteca.movie.entity.Movie;
 
 import java.util.List;
@@ -10,7 +10,7 @@ public class CheckoutMovie {
 
     public void checkoutMovie(Scanner scanner) {
 
-        List<Movie> movies = InitMovies.movies;
+        List<Movie> movies = InitMovie.movies;
         System.out.println("\n\n******************************************\n");
         System.out.print("请输入您要借出的【电影编号】：");
 
