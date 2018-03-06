@@ -12,12 +12,15 @@ public class Book {
 
     private Boolean isAvailable;
 
-    public Book(Integer bookNo, String name, String author, String publishingHouse, Boolean isAvailable) {
+    private Integer userId;
+
+    public Book(Integer bookNo, String name, String author, String publishingHouse, Boolean isAvailable, Integer userId) {
         this.bookNo = bookNo;
         this.name = name;
         this.author = author;
         this.publishingHouse = publishingHouse;
         this.isAvailable = isAvailable;
+        this.userId = userId;
     }
 
     public Integer getBookNo() {
@@ -58,6 +61,10 @@ public class Book {
 
     public void setIsAvailable(Boolean isAvailable) {
         this.isAvailable = isAvailable;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
 }

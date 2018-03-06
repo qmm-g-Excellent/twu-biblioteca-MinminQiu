@@ -1,6 +1,6 @@
 package com.twu.biblioteca.book.businessCase;
 
-import com.twu.biblioteca.common.InitBooks;
+import com.twu.biblioteca.common.InitBook;
 import com.twu.biblioteca.book.entity.Book;
 
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 public class ShowBooks {
 
     public void showBooks() {
-        List<Book> books = InitBooks.books;
+        List<Book> books = InitBook.books;
 
         System.out.println("******************************************\n\n");
         System.out.format("%10s%10s%10s%10s\n\n", "书籍编号", "书名" + '\t',  "作者"+ '\t', '\t' + "出版社");
