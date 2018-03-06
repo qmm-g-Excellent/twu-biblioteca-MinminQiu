@@ -39,7 +39,7 @@ public class BibliotecaApp {
                     mainMenu.mainMenu();
                     break;
                 case 1:
-                    new Login().login();
+                    new Login().login(new Scanner(System.in));
                     break;
                 case 2:
                     new ShowBooks().showBooks();
