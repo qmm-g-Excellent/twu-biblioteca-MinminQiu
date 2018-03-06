@@ -5,9 +5,12 @@ import com.google.common.cache.CacheBuilder;
 import com.twu.biblioteca.book.businessCase.CheckoutBook;
 import com.twu.biblioteca.book.businessCase.ReturnBook;
 import com.twu.biblioteca.book.businessCase.ShowBooks;
+import com.twu.biblioteca.book.businessCase.ShowCheckoutBookDetail;
 import com.twu.biblioteca.movie.businessCase.CheckoutMovie;
 import com.twu.biblioteca.movie.businessCase.ShowMovie;
 import com.twu.biblioteca.user.businessCase.Login;
+import com.twu.biblioteca.user.businessCase.LoginOut;
+import com.twu.biblioteca.user.businessCase.ShowUserDetail;
 import com.twu.biblioteca.user.entity.User;
 
 import java.util.Scanner;
@@ -51,7 +54,7 @@ public class BibliotecaApp {
                     new ReturnBook().returnBook(new Scanner(System.in));
                     break;
                 case 5:
-                    new ReturnBook().returnBook(new Scanner(System.in));
+                    new ShowCheckoutBookDetail().showCheckoutBookDetail(new Scanner(System.in));
                     break;
                 case 6:
                     new ShowMovie().showMovies();
@@ -59,7 +62,12 @@ public class BibliotecaApp {
                 case 7:
                     new CheckoutMovie().checkoutMovie(new Scanner(System.in));
                     break;
-
+                case 8:
+                    new ShowUserDetail().showUserDetail();
+                    break;
+                case 9:
+                    new LoginOut().loginOut();
+                    break;
                 default:
                     System.out.println("Select a valid option!");
                     System.out.print("\n请输入你的操作代号：");
@@ -67,7 +75,7 @@ public class BibliotecaApp {
             }
 
             operationNum = scanner.nextInt();
-        } while (operationNum != 9);
+        } while (operationNum != 10);
     }
 
 }

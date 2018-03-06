@@ -43,6 +43,10 @@ public class Book {
         return isAvailable;
     }
 
+    public Integer getUserId() {
+        return userId;
+    }
+
     public void setBookNo(Integer bookNo) {
         this.bookNo = bookNo;
     }
