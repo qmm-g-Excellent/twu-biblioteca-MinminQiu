@@ -25,11 +25,13 @@ public class ShowCheckoutBookDetail {
             if (book.getBookNo() == bookNo) {
                 User user = userMap.get(book.getUserId());
                 System.out.format("\n%10s%10s%10s%10s\n", "用户账号", "用户姓名" + '\t', "邮箱" + '\t', '\t' + "手机号");
-                System.out.format("%10s%10s%10s%10s\n",
-                        user.getAccount(),
-                        '\t' + user.getName(),
-                        '\t' + user.getEmail(),
-                        '\t' + user.getMobileNo());
+                if (user != null) {
+                    System.out.format("%10s%10s%10s%10s\n",
+                            user.getAccount(),
+                            '\t' + user.getName(),
+                            '\t' + user.getEmail(),
+                            '\t' + user.getMobileNo());
+                }
             }
         }
 

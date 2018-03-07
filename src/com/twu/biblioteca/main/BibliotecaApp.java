@@ -18,12 +18,6 @@ import java.util.concurrent.TimeUnit;
 
 public class BibliotecaApp {
 
-    private final static Integer mainMenu = 0;
-    private final static Integer showBookListNo = 1;
-    private final static Integer checkoutBookNo = 2;
-    private final static Integer returnBookNo = 3;
-    private final static Integer quit = 4;
-
     public static Cache<Integer, User> loginUser = CacheBuilder
             .newBuilder()
             .expireAfterAccess(1, TimeUnit.HOURS)
